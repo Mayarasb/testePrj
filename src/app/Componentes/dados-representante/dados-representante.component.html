@@ -1,0 +1,66 @@
+<main class="container-fluid main-content">
+    <div class="page-container ">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <div class="dados-instituição d-flex flex-column align-items-center">
+                    <img src="/img/img-perfil.png" alt="Logo" class="img-usuario d-inline-block align-text-top">
+                    <a class="navbar-brand" href="#">
+                        Olá, nome instituição!
+                    </a>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Dados Instituição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dados Representante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Desativar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="main-content flex-grow-1">
+<form class="form-content container-fluid">
+    <h2 class="text-center">Dados do Representante</h2>
+    <div class="row">
+        <div class=" form-group col-12">
+            <label for="org-name">Nome</label>
+            <input type="text" id="org-name" name="org-name" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-6">
+            <label for="cnpj">CPF</label>
+            <input type="text" id="cnpj" name="cnpj" class="form-control">
+        </div>
+
+        <!-- Button trigger modal -->
+         <div class="d-flex align-items-center justify-content-center">
+<button type="button" class="btn btn-primary btn-enviar " data-bs-toggle="modal" data-bs-target="#exampleModal">
+Alterar
+  </button>
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Alterar o Representante</h1>
+          <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          Tem certeza que deseja fazer essa alteração?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Enviar Alteração</button>
+        </div>
+      </div>
+    </div>
+  </div>
