@@ -51,3 +51,8 @@ margin-bottom: 20px !important;
 .btn-enviar:hover {
   background-color: #e67350;
 }
+
+
+.modal-body{
+  text-align: justify;
+}
